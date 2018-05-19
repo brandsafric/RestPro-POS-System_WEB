@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Gustavo - Home </title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  	
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="plugins/animation/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl/owl.theme.default.min.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
+</head>
+<body>
+
+
+<!-- navigation bar -->
+<div class="wapper">
+	<header>
+		<nav class="navbar custom-nav navbar-fixed-top">
+		  <div class="container clearfix">
+			 <div>
+			    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="fa fa-bars"></span>
+			     </button>
+			      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Our Logo"></a>
+			    </div>
+			    <div class="collapse navbar-collapse navbar-menu" id="myNavbar">
+				    <ul class="nav navbar-nav pull-right">
+				      <li class="active"><a href="index.html">Home</a></li>
+				      <li><a href="hotel vision.html">About</a></li> 
+				      <li><a href="hotel menu.html">Menu</a></li> 
+				      <li><a href="hotel Contact.html">Contact</a></li> 
+				    </ul>
+			    </div>
+			  </div>
+		  </div>
+		</nav>
+	</header>
+
+
+
+                        <!-- become a Member -->
+
+<div class="container" style="margin-top: 20px;">
+
+<div class="col-md-6 col-sm-6 text-center" style="background-color: #ffdc79; margin-bottom:20px;border: solid black; ">
+	<h2 style="font-family:Sofia; font-size: 40px;" >Become a Proud Member</h2>
+                            <div id="contact-form-result"></div>
+
+                            <form class="form-horizontal contact-form" id="contact_form" action="include/test1.php" method="POST">
+                                <fieldset>
+                                    <div class="form-group">
+                                      <div class="col-md-12 inputGroupContainer">
+                                      <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <input  name="fname" placeholder="First Name" class="form-control"  type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                      <div class="col-md-12 inputGroupContainer">
+                                      <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <input  name="lname" placeholder="Last Name" class="form-control"  type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                      <div class="col-md-12 inputGroupContainer">
+                                      <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <input  name="nic" placeholder="NIC No" class="form-control"  type="text">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="radio" >
+                                 	 <div class="form-group">
+                                      <div class="col-md-12 inputGroupContainer">
+                                      <div class="input-group">
+        						 	<p style="font-size: 16px;margin-bottom: -5px;">Select Your Gender:</p>
+       							  	<label class="checkbox-inline">
+       							  		<input type="radio" name="optradio" value="male" required>Male</label>
+									<label class="checkbox-inline">
+										<input type="radio" name="optradio" value="female" required>Female</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+                                  <div class="form-group">
+                                        <div class="col-md-12 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                      <input type="email" name="email" placeholder="E-Mail Address" class="form-control">
+                                        </div>
+                                      </div>
+                                    </div>
+                                           
+                                    <div class="form-group">
+                                        <div class="col-md-12 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                      <input name="phone" placeholder="(+94) 123 4567" class="form-control" type="text">
+                                        </div>
+                                      </div>
+                                    </div>
+                                      
+                                    <div class="form-group">
+                                        <div class="col-md-12 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                            <textarea class="form-control" name="address" placeholder="Address"></textarea>
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="hidden">
+                                        <input type="text" id="botcheck" name="botcheck" value="" />
+                                    </div>
+
+									<!-- Button -->
+                                    <div class="form-group">
+                                  <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block" >Become a Member <span class="glyphicon glyphicon-user"></span></button>
+                                  </div>
+                                    </div>
+
+                            </fieldset>
+                        </form>
+                        </div>                   
+</div>
+
+
+<!-- footer -->
+		<footer id="footer">
+		<div class="container">
+			<div class="text-center">
+						<p>Copyrights &copy; 2017 All Rights Reserved by RestPro</p>
+
+				
+				<!-- socia icons use -->		
+				<div >
+                    <ul class="social-icons">
+
+					<li><a href="" class="social-icon wow bounceInRight" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: bounceInRight;"> <i class="fa fa-rss"></i></a></li>
+
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: bounceInRight;"> <i class="fa fa-linkedin"></i></a></li>
+										
+					<li><a href="" class="social-icon wow bounceInRight" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: bounceInRight;"> <i class="fa fa-facebook"></i></a></li>
+                                 
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: bounceInRight;"> <i class="fa fa-twitter"></i></a></li>
+                                      
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1000ms" style="visibility: visible; animation-delay: 1000ms; animation-name: bounceInRight;"> <i class="fa fa-youtube"></i></a></li>
+                                        
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: bounceInRight;"> <i class="fa fa-snapchat-ghost"></i></a></li>
+                                     
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1400ms" style="visibility: visible; animation-delay: 1400ms; animation-name: bounceInRight;"> <i class="fa fa-linkedin"></i></a></li>
+                                       
+
+                    </ul>
+
+            </div>
+              
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- java script part -->
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="plugins/animation/wow.js"></script>
+<script src="plugins/owl/owl.carousel.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+
+
+</body>
+</html>
+
+

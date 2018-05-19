@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Gustavo - Home </title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  	
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="plugins/animation/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/stylec.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl/owl.theme.default.min.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
+</head>
+<body>
+
+
+<!-- navigation bar -->
+<div class="wapper">
+	<header>
+		<nav class="navbar custom-nav navbar-fixed-top">
+		  <div class="container clearfix">
+			 <div>
+			    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="fa fa-bars"></span>
+			     </button>
+			      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Our Logo"></a>
+			    </div>
+			    <div class="collapse navbar-collapse navbar-menu" id="myNavbar">
+				   <ul class="nav navbar-nav pull-right">
+				      <li ><a href="index.html">Home</a></li>
+				      <li><a href="hotelvision.html">About</a></li> 
+				      <li><a href="hotelmenu.html">Menu</a></li> 
+				      <li><a href="hotelcontact.html">Contact</a></li> 
+				    </ul>
+			    </div>
+			  </div>
+		  </div>
+		</nav>
+	</header>
+
+  <section class="our_service" style="padding-top: 130px;">
+    <div class="add-cart-btn cart-custom" data-toggle="modal" data-target="#myModal" title="Add Cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="label label-warning" id="cart_count">0</span>
+    </div>
+    <div class="drawer drawer--left visible-sm visible-xs drawer-close">
+        <header role="banner">
+        <button type="button" class="drawer-toggle drawer-hamburger drawer-custom">
+          <span class="sr-only">toggle navigation</span>
+          <i class="fa fa-list"></i>
+        </button>
+
+       
+      </header>
+    <div class="drawer-overlay drawer-toggle"></div></div>
+    <div class="container" style="margin-top:50px;">
+        <div class="col-md-3">
+            <div class="category hidden-xs hidden-sm">
+                <h2>Categories</h2>
+                <ul>
+                    						<li><a href="#0" class="active">Rice and Curry</a></li>
+                                            <li><a href="cat1.html">Fride Rice</a></li>
+                                            <li><a href="#0">Koththu</a></li>
+                                            <li><a href="#0">Burger</a></li>
+                                            <li><a href="#0">Soupes</a></li>
+                                            <li><a href="#0">Soft Drinks</a></li>
+                                            <li><a href="#0">Desserts</a></li>
+                                            <li><a href="#0">Appetizer</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Your Order List</h4>
+                  </div>
+                  <div class="modal-body" style="overflow-x: auto;">
+                    <table class="table" id="records_table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Items</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                                                </tbody>
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th><b>Total:</b></th>
+                                <th><b id="grandtotal">0</b></th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    
+                    <a href="" class="btn-light-bg" style="padding: 3px 20px;">Submit</a>
+                    <button type="button" class="btn btn-light-bg" style="padding: 3px 20px;" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+<!-- model -->
+
+            <div class="row text-center">
+                                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                    <div class="single_service single_service_color">
+                        <img src="img/menu/demo.png" class="img-responsive">
+                        <h4>Rice and Curry(C)</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4"><span>Rs.<b>150</b></span></div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                                <input type="number" name="qty" min="1" value="1" class="form-control input-height qty">
+                            </div>
+                            <div class="col-md-4 col-sm-4  col-xs-4"><button type="button" value="1" class="order-btn getDate">Order</button></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                    <div class="single_service single_service_color">
+                        <img src="img/menu/demo.png" class="img-responsive">
+                        <h4>Rice and Curry(F)</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4"><span>Rs.<b>100</b></span></div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                                <input type="number" name="qty" min="1" value="1" class="form-control input-height qty">
+                            </div>
+                            <div class="col-md-4 col-sm-4  col-xs-4"><button type="button" value="5" class="order-btn getDate">Order</button></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                    <div class="single_service single_service_color">
+                        <img src="img/menu/demo.png" class="img-responsive">
+                        <h4>Rice and Curry(E)</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4"><span>Rs.<b>180</b></span></div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                                <input type="number" name="qty" min="1" value="1" class="form-control input-height qty">
+                            </div>
+                            <div class="col-md-4 col-sm-4  col-xs-4"><button type="button" value="6" class="order-btn getDate">Order</button></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                    <div class="single_service single_service_color">
+                        <img src="img/menu/demo.png" class="img-responsive">
+                        <h4>Rice and Curry(V)</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4"><span>Rs.<b>140</b></span></div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                                <input type="number" name="qty" min="1" value="1" class="form-control input-height qty">
+                            </div>
+                            <div class="col-md-4 col-sm-4  col-xs-4"><button type="button" value="7" class="order-btn getDate">Order</button></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                    <div class="single_service single_service_color">
+                        <img src="img/menu/demo.png" class="img-responsive">
+                        <h4>Rice and Curry(B)</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4"><span>Rs.<b>350</b></span></div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                                <input type="number" name="qty" min="1" value="1" class="form-control input-height qty">
+                            </div>
+                            <div class="col-md-4 col-sm-4  col-xs-4"><button type="button" value="11" class="order-btn getDate">Order</button></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                    <div class="single_service single_service_color">
+                        <img src="img/menu/demo.png" class="img-responsive">
+                        <h4>Rice and Curry (M)</h4>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4"><span>Rs.<b>650</b></span></div>
+                            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                                <input type="number" name="qty" min="1" value="1" class="form-control input-height qty">
+                            </div>
+                            <div class="col-md-4 col-sm-4  col-xs-4"><button type="button" value="12" class="order-btn getDate">Order</button></div>
+                        </div>
+                    </div>
+                </div>
+                                
+                
+            </div><!--END  ROW -->
+        </div>
+    </div><!-- END CONTAINER -->
+</section>
+
+</div>
+</body>
+</html>

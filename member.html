@@ -1,0 +1,406 @@
+
+
+<!Doctype html>
+<head>
+  <title> Gustavo - Home </title>
+
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, transition: width 5s;" name="viewport">
+    
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="plugins/animation/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="plugins/owl/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="plugins/owl/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  
+  
+  <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+  <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="bulk.css">
+
+
+ <style>
+
+         input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {    
+    border-color:#843534;
+    box-shadow: none;
+}
+
+
+input.parsley-error:focus,
+select.parsley-error:focus,
+textarea.parsley-error:focus {    
+    border-color:#843534;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483
+}
+.parsley-required{
+    color: red;
+}
+        </style>
+
+       <script type="text/javascript">
+         
+           
+$(function () {
+  $('#form').parsley().on('field:validated', function() {
+    var ok = $('.parsley-error').length === 0;
+    $('.bs-callout-info').toggleClass('hidden',
+    !ok);
+    $('.bs-callout-warning').toggleClass('hidden', ok);
+  })
+  .on('form:submit', function() {
+    return true; 
+  });
+});
+</script>
+
+</head>
+<body style="  background: url(img/bgimg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+<!-- navigation bar -->
+<div class="wapper">
+  <header>
+    <nav class="navbar custom-nav navbar-fixed-top">
+      <div class="container clearfix">
+       <div>
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="fa fa-bars"></span>
+           </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Our Logo"></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-menu" id="myNavbar">
+           <ul class="nav navbar-nav pull-right">
+				      <li ><a href="index.html">Home</a></li>
+				      <li><a href="hotelvision.html">About</a></li> 
+				      <li><a href="hotelmenu.html">Menu</a></li> 
+				      <li><a href="hotelcontact.html">Contact</a></li> 
+				    </ul>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+<div class="container" style="margin-top: 150px;">
+
+
+<p class="text-justify" style="font-family:Sofia;font-size: 21px;font-weight: 700px; color: black;" >Anyone who is a restaurant owner (or an establishment which serves food in conjunction with its business whether it be a sole proprietorship, partnership, joint venture, corporation). Independent Restaurants, Franchised Restaurants, Caterers, Country Clubs, etc.</p>
+
+
+<p class="text-justify" style="font-family:Sofia;font-size: 21px;font-weight: 700px; color: black;" >Advocacy</p>
+<ul style="font-family:Sofia;font-size: 18px;font-weight: 500px; color: black;">
+<li>Representation at the local, state, and federal level on legislative and regulatory issues that impact your business.</li>
+<li>Weekly emails updating restaurant owners and managers about important political issues.</li>
+<li>Exclusive fact sheets explaining complicated new laws and regulations.</li>
+<li>Staff experts to answer your questions on laws and regulations.</li>
+<li>15 minute free phone call with a labor attorney and discounted member rates if hiring counsel is necessary.</li>
+<li>Annual lobby day in Washington, DC with the National Restaurant Association.</li>
+</ul>
+
+
+</div>
+
+ 
+
+
+<div class="container1" style="margin-top: 30px; margin-bottom: 20px;">
+  <form onchange="return doCalculate(this)" action ="register.jsp" method ="POST" data-parsley-validate=""  >
+    <div class="row">
+      <h4>Become a Proud Member</h4>
+      <div>
+     <div class="input-group input-group-icon">
+        <input id="nic" type="text" placeholder="NIC Number " name="nic" data-parsley-trigger="keyup" required="" onkeyup="doCalculate()" />
+        <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+      </div>
+        <span id = "errornic" style="color: red; margin-bottom: 2px;"></span>
+      </div>
+
+
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="First Name" name="firstname" data-parsley-type="character" required=""/>
+        <div class="input-icon"><i class="fa fa-user" ></i></div>
+      </div>
+ <div class="input-group input-group-icon">
+        <input type="text" placeholder="Last Name" name="lastname" data-parsley-type="character" required=""/>
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+
+      <div class="input-group input-group-icon">
+        <input type="email" placeholder="Email Adress" name="email" data-parsley-trigger="change" required data-parsley-type="email" required=""/>
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+      
+    
+      
+      <div class="input-group input-group-icon">
+        <input type="text"  name="gender" id="genderr" value="" disabled="disabled" />
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+    
+   <div>
+     <div class="input-group input-group-icon">
+        <input type="text" placeholder="Telephone No" name="contact" data-parsley-type="digits" required="" id="txtPhomenumber" onkeyup="Validate()" />
+        <div class="input-icon"><i class="fa fa-phone"></i></div>
+       
+      </div>
+         <span id = "error" style="color: red; margin-bottom: 2px;"></span>
+    </div>
+
+
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Address" name="address" required=""/>
+        <div class="input-icon"><i class="fa fa-users"></i></div>
+      </div>
+ </div>
+
+
+    <script type="text/javascript">
+       function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+
+
+
+
+       <h4>Terms and Conditions</h4>
+      <div class="input-group">
+        <input type="checkbox" id="terms" required=""/>
+        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+      </div>
+    
+ <button class="btn1" type="submit" id="submitbtn" name="submitbtn" disabled="disabled"> Request Membership</button>  
+  </form>
+  </div>
+  
+  <script type="text/javascript">
+   var checker = document.getElementById('terms');
+ var sendbtn = document.getElementById('submitbtn');
+ // when unchecked or checked, run the function
+ checker.onchange = function(){
+if(this.checked){
+    sendbtn.disabled = false;
+} else {
+    sendbtn.disabled = true;
+}
+
+}
+</script>
+
+
+
+
+
+<script type="text/javascript">
+  
+    function doCalculate(elm)
+    
+    {
+        var nic = document.getElementById('nic').value;
+        var gender="ss";
+      
+        var dob = document.getElementById('dob');
+       //var pattern = /[0-9]{9}[V|X]/;
+       var pattern = /[0-9]{9}[x|X|v|V]$/g;
+        if (!pattern.test(nic))
+        {
+           
+            errornic.innerHTML = 'Enter valid nic number';
+            
+            return false;
+        }
+        var mon =
+                {
+                    "1": ["Jan", 31],
+                    "2": ["Feb", 29],
+                    "3": ["Mar", 31],
+                    "4": ["Apr", 30],
+                    "5": ["May", 31],
+                    "6": ["Jun", 30],
+                    "7": ["Jul", 31],
+                    "8": ["Aug", 31],
+                    "9": ["Sep", 30],
+                    "10": ["Oct", 31],
+                    "11": ["Nov", 30],
+                    "12": ["Dec", 31]
+                };
+
+        if (nic.length >= 5)
+        {
+            year = "19" + nic.substr(0, 2);
+            days = parseInt(nic.substr(2, 3));
+            if (days > 500)
+            {
+                gender="Female";
+                days = days - 500;
+            }
+            else
+            {
+                gender="Male";
+            }
+            document.getElementById('genderr').value=gender;
+            var key;
+            for (key in mon)
+            {
+                if (days > mon[key][1])
+                {
+                    days = days - mon[key][1];
+                }
+                else
+                {
+                    break;
+                }
+                
+            }
+            if (days < 10)
+            {
+                days = "0" + days;
+            }
+            else{
+
+              errornic.innerHTML = '';
+            }
+            
+        }
+        return false;
+    }
+
+
+
+</script>
+
+
+<script type="text/javascript">
+  function Validate()
+{
+  var x = document.getElementById("txtPhomenumber").value;
+  if(isNaN(x)|| x.indexOf(" ")!=-1)
+  {
+     
+      error.innerHTML = 'Enter numeric value';
+     return false;
+  }
+  if (x.length > 10  )
+  {
+    
+     error.innerHTML = 'enter 10 digits';
+     return false;
+  }
+  if (x.charAt(0)!="0")
+  {
+      
+      error.innerHTML = 'it should start with 0';
+      return false;
+  }
+  else {
+    error.innerHTML = '';
+  }
+}
+</script>
+
+<script>
+    function Validatenic()
+    {
+        var nic = document.getElementById('nicno').value;
+        
+        
+        var pattern = /[0-9]{9}[V|X]/;
+        if (!pattern.test(nic))
+        {
+           
+          
+            alert('Invalid NIC number');
+            return false;
+        }
+       else{
+        alter("sas");
+       } 
+       
+</script>
+
+
+<!-- footer -->
+   <footer id="footer">
+    <div class="container">
+      <div class="text-center">
+            <p>Copyrights &copy; 2017 All Rights Reserved by RestPro</p>
+
+        
+        <!-- socia icons use -->    
+        <div >
+                    <ul class="social-icons">
+
+          <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: bounceInRight;"> <i class="fa fa-rss"></i></a></li>
+
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: bounceInRight;"> <i class="fa fa-linkedin"></i></a></li>
+                    
+          <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: bounceInRight;"> <i class="fa fa-facebook"></i></a></li>
+                                 
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: bounceInRight;"> <i class="fa fa-twitter"></i></a></li>
+                                      
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1000ms" style="visibility: visible; animation-delay: 1000ms; animation-name: bounceInRight;"> <i class="fa fa-youtube"></i></a></li>
+                                        
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: bounceInRight;"> <i class="fa fa-snapchat-ghost"></i></a></li>
+                                     
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1400ms" style="visibility: visible; animation-delay: 1400ms; animation-name: bounceInRight;"> <i class="fa fa-linkedin"></i></a></li>
+                                       
+
+                    </ul>
+
+            </div>
+              
+      </div>
+    </div>
+  </footer>
+  <!-- java script part -->
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="plugins/animation/wow.js"></script>
+<script src="plugins/owl/owl.carousel.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+  <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.js"></script>
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
+
+
+
+
+</body>
+</html>

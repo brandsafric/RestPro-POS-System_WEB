@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Gustavo - Contact </title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  	
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="plugins/animation/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/owl/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+	
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+
+        <style>
+            .rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #09f;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}
+
+</style>
+
+<style>
+
+         input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {    
+    border-color:#843534;
+    box-shadow: none;
+}
+
+
+input.parsley-error:focus,
+select.parsley-error:focus,
+textarea.parsley-error:focus {    
+    border-color:#843534;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483
+}
+.parsley-required{
+    color: red;
+}
+        </style>
+
+       <script type="text/javascript">
+         
+           
+$(function () {
+  $('contact-form').parsley().on('field:validated', function() {
+    var ok = $('.parsley-error').length === 0;
+    $('.bs-callout-info').toggleClass('hidden',
+    !ok);
+    $('.bs-callout-warning').toggleClass('hidden', ok);
+  })
+  .on('form:submit', function() {
+    return true; 
+  });
+});
+</script>
+
+
+
+       
+</head>
+<body>
+
+
+<!-- navigation bar -->
+<div class="wapper">
+	<header>
+		<nav class="navbar custom-nav navbar-fixed-top" >
+		  <div class="container clearfix">
+			 <div>
+			    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navcol">
+			        <span class="fa fa-bars"></span>
+			     </button>
+			      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Our Logo"></a>
+			    </div>
+			    <div class="collapse navbar-collapse navbar-menu" id="navcol">
+				   <ul class="nav navbar-nav pull-right">
+				      <li ><a href="index.html">Home</a></li>
+				      <li><a href="hotelvision.html">About</a></li> 
+				      <li><a href="hotelmenu.html">Menu</a></li> 
+				      <li class="active"><a href="hotelcontact.html">Contact</a></li> 
+				    </ul>
+			    </div>
+			  </div>
+		  </div>
+		</nav>
+	</header>
+
+
+
+
+
+<div class="container" style="margin-top:125px;">
+   
+	<div class="header-title text-center">
+	     <h1 style="font-family:Sofia; font-size: 40px;">Contact Us</h1>
+		    <div class="line-center"></div>
+
+
+</div>
+
+		       </div>
+
+
+  <!-- Using Map -->
+ 
+                    <div class="container" id="map">
+                   
+     <script>
+      function initMap() {
+        var uluru = {lat: 6.9820, lng: 81.0762};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqEMa4AifRuXKRUCcea_ZgVXI46Ovh6C8&callback=initMap"
+    async defer></script>
+
+                     </div>
+
+                     <!-- feedback -->
+
+                     <script>
+
+  function checkMessageCount() {
+    var maxlen = 1000;
+    var len = document.getElementById('message').value.length;
+    document.getElementById('charsleft').innerHTML = 'You have ' + (maxlen - len) + ' characters remaining';
+  }
+
+  </script>
+
+           
+               
+                        
+
+ 
+
+
+<!-- Address -->
+
+               <div class="container" style="margin-top: 30px; margin-bottom: 30px;">    
+              <div class="col-md-6 col-sm-12 col-xs-12" >
+                <div class="raw">
+                <h2 style="margin-bottom: 20px;font-family:Sofia; font-size: 40px;">Keep in touch</h2>
+              <div class="container">
+                            
+                            <h4><span class="fa fa-rocket"></span> Our Location</h4>
+                            <p>123 Passara Rd, Bandaragama,<br> Badulla</p>
+                        </div>
+                        <div class="container">
+                            
+                            <h4> <span class="fa fa-phone" ></span> Call us on</h4>
+                            <p>(+94) 011 123 4567 <br> (+94) 011 123 4567 </p>
+                        </div>
+                        <div class="container">
+                      
+                            <h4> <span class="fa fa-envelope" ></span> Send your message</h4>
+                            <p>hello@gustavo.lk</p>
+                        </div>
+</div>
+</div>
+
+ <div class="row">                                   
+                    <div class="col-md-6 col-sm-12 col-xs-12" >
+                        <div class="contact_form">
+                          <h2 style="margin-bottom: 20px;font-family:Sofia; font-size: 40px;">Give Your Feedback</h2>
+                            <form id="contact-form" action="feedback.jsp" method="POST" onchange="return doCalculate(this)" >
+                                <div class="row">
+                                   
+                                    <div class="form-group col-md-4">
+                                        <input type="text" name="barcode" class="form-control"   placeholder="Enter Your Barcode ID" data-parsley-trigger="keyup" required="" onkeyup="nicValidate()"  >
+                                        <span id = "errornic" style="color: red; margin-bottom: 2px;"></span>
+                                    </div>
+                                      
+   <script type="text/javascript">
+  
+   function nicValidate()
+    
+    {
+        var nic = document.getElementById('nic').value;
+       var pattern = /[0-9]{9}[x|X|v|V]$/g;
+        if (!pattern.test(nic))
+        {
+           
+            errornic.innerHTML = 'Enter valid nic number';
+            
+            return false;
+        }
+        else {
+
+            errornic.innerHTML = 'xx';
+
+        }
+
+</script>
+                                 
+
+
+
+                                    <div class="form-group col-md-4">
+                                        <input type="email" name="email" class="form-control" id="email" required="" placeholder="Email" data-parsley-type="email">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="text" name="name" class="form-control" id="subject" required="" placeholder="Name" data-parsley-type="character">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea rows="6" name="feedback" class="form-control feedback_textarea" required="" id="message" maxlength="1000" placeholder="Your Feedback" data-parsley-type="character" onKeyUp="checkMessageCount()" ></textarea>
+                                        <br/>
+                                         <div id="charsleft"  class="feedback_comments">You have 1000 characters remaining</div>
+                                         
+                                    </div>
+                             
+      
+                               
+                                    <div class="col-md-12">
+                                        <div class="actions">
+                                            <button type="submit" value="Send message" name="submit" id="submitButton" class="btn  btn-light-bg" title="Submit Your Message!">Send feedback</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- END COL -->
+                     
+
+</div>
+</div>
+
+
+
+<!-- footer -->
+		<footer id="footer">
+		<div class="container">
+			<div class="text-center">
+						<p>Copyrights &copy; 2017 All Rights Reserved by RestPro</p>
+
+				
+				<!-- socia icons use -->		
+				<div >
+                    <ul class="social-icons">
+
+					<li><a href="" class="social-icon wow bounceInRight" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: bounceInRight;"> <i class="fa fa-rss"></i></a></li>
+
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: bounceInRight;"> <i class="fa fa-linkedin"></i></a></li>
+										
+					<li><a href="" class="social-icon wow bounceInRight" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: bounceInRight;"> <i class="fa fa-facebook"></i></a></li>
+                                 
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: bounceInRight;"> <i class="fa fa-twitter"></i></a></li>
+                                      
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1000ms" style="visibility: visible; animation-delay: 1000ms; animation-name: bounceInRight;"> <i class="fa fa-youtube"></i></a></li>
+                                        
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: bounceInRight;"> <i class="fa fa-snapchat-ghost"></i></a></li>
+                                     
+                    <li><a href="" class="social-icon wow bounceInRight" data-wow-delay="1400ms" style="visibility: visible; animation-delay: 1400ms; animation-name: bounceInRight;"> <i class="fa fa-linkedin"></i></a></li>
+                                       
+
+                    </ul>
+
+            </div>
+              
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- java script part -->
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="plugins/animation/wow.js"></script>
+<script src="plugins/owl/owl.carousel.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
